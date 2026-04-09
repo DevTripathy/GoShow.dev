@@ -12,7 +12,7 @@ import axios from 'axios'
 
 const MovieDetails = () => {
   const {shows, image_base_url} = useAppContext();
-  const backendUrl = import.meta.env.BACKEND_URL || 'http://localhost:5000';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
   const navigate = useNavigate();
   const { id } = useParams();

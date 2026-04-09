@@ -11,7 +11,7 @@ import { useAppContext } from "../context/AppContext";
 const MovieSection = () => {
 
    const { image_base_url, shows } = useAppContext();
-   const backendUrl = import.meta.env.BACKEND_URL || 'http://localhost:5000';
+   const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
    const navigate = useNavigate()
    const swiperWrappedRef = useRef(null);

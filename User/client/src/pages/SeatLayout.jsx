@@ -117,7 +117,7 @@ const SeatLayout = () => {
   const navigate = useNavigate();
 
   const { shows, isLoggedIn } = useAppContext();
-  const backendUrl = import.meta.env.BACKEND_URL || 'http://localhost:5000';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
   useEffect(() => {
     setSelectedSeats([]);

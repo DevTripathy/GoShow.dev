@@ -13,7 +13,7 @@ const MyBookings = () => {
   const [ isLoading, setIsLoading ] = useState(true);
 
   const currency=import.meta.env.VITE_CURRENCY
-  const backendUrl = import.meta.env.BACKEND_URL || 'http://localhost:5000';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
   
 
   const getMyBookings = async () => {

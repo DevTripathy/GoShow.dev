@@ -9,7 +9,7 @@ const DateSelect = ({id}) => {
    const [selected, setSelected] = useState(null);
    const[visibleDates, setVisibleDates] = useState([])
    const [highlightedDates, setHighlightedDates] = useState([]);
-   const backendUrl = import.meta.env.BACKEND_URL || 'http://localhost:5000';
+   const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
    const navigate = useNavigate();
 
