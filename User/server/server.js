@@ -35,7 +35,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000'];
+const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'https://goshow-kappa.vercel.app'];
 
 app.use(cors({origin: allowedOrigins, credentials: true}));
 app.use(express.json());
